@@ -1,4 +1,11 @@
 {
+  "repository": {
+    "url": "https://github.com/amirr-hossein/mehr"
+  },
+    "scripts": {
+    "dev": "tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/build.css -w",
+    "deploy": "gh-pages -d src"
+  },
   "devDependencies": {
     "tailwindcss": "^3.3.5"
   }
