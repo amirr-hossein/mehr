@@ -679,8 +679,45 @@ video {
   margin: 0.25rem;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ml-\[256px\] {
+  margin-left: 256px;
+}
+
+.ml-\[48px\] {
+  margin-left: 48px;
+}
+
+.ml-\[52px\] {
+  margin-left: 52px;
+}
+
+.mt-0 {
+  margin-top: 0px;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
+}
+
+.mt-\[27px\] {
+  margin-top: 27px;
+}
+
+.ml-\[233px\] {
+  margin-left: 233px;
+}
+
+.mt-\[\] {
+  margin-top: ;
+}
+
+.mt-\[109px\] {
+  margin-top: 109px;
 }
 
 .box-border {
@@ -780,6 +817,14 @@ video {
 
 .hidden {
   display: none;
+}
+
+.h-\[100vh\] {
+  height: 100vh;
+}
+
+.w-\[100vw\] {
+  width: 100vw;
 }
 
 .flex-shrink {
@@ -1833,6 +1878,10 @@ video {
      object-fit: scale-down;
 }
 
+.p-0 {
+  padding: 0px;
+}
+
 .text-left {
   text-align: left;
 }
@@ -1889,8 +1938,32 @@ video {
   vertical-align: super;
 }
 
+.font-Inter {
+  font-family: inter;
+}
+
+.font-Light {
+  font-family: estedadLight;
+}
+
+.text-itemMenu {
+  font-size: 18px;
+}
+
+.text-textIcon {
+  font-size: 12px;
+}
+
+.text-titleHeroSection {
+  font-size: 44px;
+}
+
 .font-bold {
   font-weight: 700;
+}
+
+.font-light {
+  font-weight: 300;
 }
 
 .uppercase {
@@ -2285,6 +2358,18 @@ video {
 .content-\[\'this-is-also-valid\]-weirdly-enough\'\] {
   --tw-content: 'this-is-also-valid]-weirdly-enough';
   content: var(--tw-content);
+}
+
+@font-face {
+  font-family: inter;
+
+  src: url(../font/Inter\ Regular.otf);
+}
+
+@font-face {
+  font-family: estedadLight;
+
+  src: url(../font/Estedad-Light.ttf);
 }
 
 @media (min-width: 640px) {

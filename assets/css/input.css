@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+    font-family: inter;
+    src: url(../font/Inter\ Regular.otf);
+}
+@font-face {
+    font-family: estedadLight;
+    src: url(../font/Estedad-Light.ttf);
+}
