@@ -5,7 +5,9 @@ module.exports = {
     extend: {
       fontFamily:{
         Inter:["inter"],
-        Light:["estedadLight"]
+        Light:["estedadLight"],
+        kBold:["kalamehbold"],
+        Regular:["estedadRegular"]
       },
       fontSize:{
         textIcon:"12px",

@@ -639,6 +639,10 @@ video {
   inset-inline-end: 0.25rem;
 }
 
+.top-\[54\%\] {
+  top: 54%;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -684,8 +688,12 @@ video {
   margin-right: auto;
 }
 
-.ml-\[256px\] {
-  margin-left: 256px;
+.ml-\[254px\] {
+  margin-left: 254px;
+}
+
+.ml-\[40px\] {
+  margin-left: 40px;
 }
 
 .ml-\[48px\] {
@@ -704,20 +712,16 @@ video {
   margin-top: 0.5rem;
 }
 
+.mt-\[109px\] {
+  margin-top: 109px;
+}
+
 .mt-\[27px\] {
   margin-top: 27px;
 }
 
-.ml-\[233px\] {
-  margin-left: 233px;
-}
-
-.mt-\[\] {
-  margin-top: ;
-}
-
-.mt-\[109px\] {
-  margin-top: 109px;
+.mt-\[32px\] {
+  margin-top: 32px;
 }
 
 .box-border {
@@ -823,8 +827,16 @@ video {
   height: 100vh;
 }
 
+.h-\[105px\] {
+  height: 105px;
+}
+
 .w-\[100vw\] {
   width: 100vw;
+}
+
+.w-\[584px\] {
+  width: 584px;
 }
 
 .flex-shrink {
@@ -1882,6 +1894,10 @@ video {
   padding: 0px;
 }
 
+.pb-\[6px\] {
+  padding-bottom: 6px;
+}
+
 .text-left {
   text-align: left;
 }
@@ -1946,6 +1962,18 @@ video {
   font-family: estedadLight;
 }
 
+.font-Regular {
+  font-family: estedadRegular;
+}
+
+.font-kBold {
+  font-family: kalamehbold;
+}
+
+.text-\[20px\] {
+  font-size: 20px;
+}
+
 .text-itemMenu {
   font-size: 18px;
 }
@@ -1964,6 +1992,10 @@ video {
 
 .font-light {
   font-weight: 300;
+}
+
+.font-normal {
+  font-weight: 400;
 }
 
 .uppercase {
@@ -2036,6 +2068,11 @@ video {
 
 .text-\[\#336699\]\/\[\.35\] {
   color: rgb(51 102 153 / .35);
+}
+
+.text-\[\#FFA455\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 164 85 / var(--tw-text-opacity));
 }
 
 .text-blue-500 {
@@ -2372,6 +2409,29 @@ video {
   src: url(../font/Estedad-Light.ttf);
 }
 
+@font-face {
+  font-family: kalamehbold;
+
+  src: url(../font/Kalameh-Bold.ttf);
+}
+
+@font-face {
+  font-family: estedadRegular;
+
+  src: url(../font/Estedad-Regular.ttf);
+}
+
+.item:hover {
+  background-image: url(../img/svg/lineUnderItemMenu.svg);
+  transition: all 0.7s ease;
+}
+
+.item {
+  transition: all 0.7s ease;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -2410,6 +2470,11 @@ video {
 
 .hover\:font-bold:hover {
   font-weight: 700;
+}
+
+.hover\:text-\[\#FF7700\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 119 0 / var(--tw-text-opacity));
 }
 
 .before\:hover\:text-center:hover::before {

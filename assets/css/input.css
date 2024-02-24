@@ -2,10 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 @font-face {
-    font-family: inter;
-    src: url(../font/Inter\ Regular.otf);
+  font-family: inter;
+  src: url(../font/Inter\ Regular.otf);
 }
 @font-face {
-    font-family: estedadLight;
-    src: url(../font/Estedad-Light.ttf);
+  font-family: estedadLight;
+  src: url(../font/Estedad-Light.ttf);
+}
+@font-face {
+  font-family: kalamehbold;
+  src: url(../font/Kalameh-Bold.ttf);
+}
+@font-face {
+  font-family: estedadRegular;
+  src: url(../font/Estedad-Regular.ttf);
+}
+.item:hover {
+  background-image: url(../img/svg/lineUnderItemMenu.svg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  transition: all 0.4s ease;
 }
