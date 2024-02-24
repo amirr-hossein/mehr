@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.3.5 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -32,9 +32,11 @@
 4. Use the user's configured `sans` font-family by default.
 5. Use the user's configured `sans` font-feature-settings by default.
 6. Use the user's configured `sans` font-variation-settings by default.
+7. Disable tap highlights on iOS
 */
 
-html {
+html,
+:host {
   line-height: 1.5;
   /* 1 */
   -webkit-text-size-adjust: 100%;
@@ -44,12 +46,14 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
   font-variation-settings: normal;
   /* 6 */
+  -webkit-tap-highlight-color: transparent;
+  /* 7 */
 }
 
 /*
@@ -121,8 +125,10 @@ strong {
 }
 
 /*
-1. Use the user's configured `mono` font family by default.
-2. Correct the odd `em` font sizing in all browsers.
+1. Use the user's configured `mono` font-family by default.
+2. Use the user's configured `mono` font-feature-settings by default.
+3. Use the user's configured `mono` font-variation-settings by default.
+4. Correct the odd `em` font sizing in all browsers.
 */
 
 code,
@@ -131,8 +137,12 @@ samp,
 pre {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   /* 1 */
-  font-size: 1em;
+  font-feature-settings: normal;
   /* 2 */
+  font-variation-settings: normal;
+  /* 3 */
+  font-size: 1em;
+  /* 4 */
 }
 
 /*
@@ -635,8 +645,16 @@ video {
   inset: -0.25rem;
 }
 
+.bottom-\[10px\] {
+  bottom: 10px;
+}
+
 .end-1 {
   inset-inline-end: 0.25rem;
+}
+
+.left-\[10px\] {
+  left: 10px;
 }
 
 .top-\[54\%\] {
@@ -692,6 +710,10 @@ video {
   margin-left: 254px;
 }
 
+.ml-\[314px\] {
+  margin-left: 314px;
+}
+
 .ml-\[40px\] {
   margin-left: 40px;
 }
@@ -710,6 +732,10 @@ video {
 
 .mt-2 {
   margin-top: 0.5rem;
+}
+
+.mt-\[104px\] {
+  margin-top: 104px;
 }
 
 .mt-\[109px\] {
@@ -831,12 +857,40 @@ video {
   height: 105px;
 }
 
+.h-\[60px\] {
+  height: 60px;
+}
+
+.h-\[9px\] {
+  height: 9px;
+}
+
 .w-\[100vw\] {
   width: 100vw;
 }
 
+.w-\[35px\] {
+  width: 35px;
+}
+
 .w-\[584px\] {
   width: 584px;
+}
+
+.w-\[9px\] {
+  width: 9px;
+}
+
+.w-\[this-is\\\\\] {
+  width: this-is\\;
+}
+
+.w-\[this-is\] {
+  width: this-is;
+}
+
+.w-\[weird-and-invalid\] {
+  width: weird-and-invalid;
 }
 
 .flex-shrink {
@@ -1630,6 +1684,10 @@ video {
   white-space: break-spaces;
 }
 
+.text-wrap {
+  text-wrap: wrap;
+}
+
 .break-normal {
   overflow-wrap: normal;
   word-break: normal;
@@ -1649,6 +1707,14 @@ video {
 
 .rounded {
   border-radius: 0.25rem;
+}
+
+.rounded-\[24px\] {
+  border-radius: 24px;
+}
+
+.rounded-full {
+  border-radius: 9999px;
 }
 
 .rounded-b {
@@ -1717,6 +1783,10 @@ video {
   border-width: 1px;
 }
 
+.border-2 {
+  border-width: 2px;
+}
+
 .border-x {
   border-left-width: 1px;
   border-right-width: 1px;
@@ -1773,6 +1843,16 @@ video {
 
 .border-none {
   border-style: none;
+}
+
+.border-\[\#757575\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(117 117 117 / var(--tw-border-opacity));
+}
+
+.bg-\[\#757575\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(117 117 117 / var(--tw-bg-opacity));
 }
 
 .bg-\[rgb\(255\2c 0\2c 0\)\] {
@@ -2421,15 +2501,39 @@ video {
   src: url(../font/Estedad-Regular.ttf);
 }
 
-.item:hover {
+.item::after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  width: 24px;
+  height: 0;
+  right: 40%;
   background-image: url(../img/svg/lineUnderItemMenu.svg);
-  transition: all 0.7s ease;
-}
-
-.item {
-  transition: all 0.7s ease;
   background-position: bottom;
   background-repeat: no-repeat;
+  transition: height 0.4s ease;
+}
+
+.item:hover::after {
+  height: 4px;
+}
+
+@keyframes scroll-Ball {
+  0% {
+    bottom: 10px;
+  }
+
+  50% {
+    bottom: 35px;
+  }
+
+  100% {
+    bottom: 10px;
+  }
+}
+
+.scroll-animation {
+  animation: 2s linear 0s infinite scroll-Ball;
 }
 
 @media (min-width: 640px) {

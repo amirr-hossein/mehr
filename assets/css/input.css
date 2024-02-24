@@ -17,9 +17,32 @@
   font-family: estedadRegular;
   src: url(../font/Estedad-Regular.ttf);
 }
-.item:hover {
+.item::after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  width: 24px;
+  height: 0;
+  right: 40%;
   background-image: url(../img/svg/lineUnderItemMenu.svg);
   background-position: bottom;
   background-repeat: no-repeat;
-  transition: all 0.4s ease;
+  transition: height 0.4s ease;
+}
+.item:hover::after {
+  height: 4px;
+}
+@keyframes scroll-Ball {
+  0% {
+    bottom: 10px;
+  }
+  50% {
+    bottom: 35px;
+  }
+  100% {
+    bottom: 10px;
+  }
+}
+.scroll-animation {
+  animation: 2s linear 0s infinite scroll-Ball;
 }
