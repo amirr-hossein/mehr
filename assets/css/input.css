@@ -50,3 +50,11 @@
 .scroll-animation {
   animation: 2s linear 0s infinite scroll-Ball;
 }
+
+@media screen and (max-width: 768px){
+  .hero{
+    background-image: url(../img/imageHeroMobile.png);
+    background-repeat: no-repeat;
+    background-size: 100vw 100%;
+  }
+}
