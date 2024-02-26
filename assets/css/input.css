@@ -17,6 +17,10 @@
   font-family: estedadRegular;
   src: url(../font/Estedad-Regular.ttf);
 }
+@font-face {
+  font-family: kalamehlight;
+  src: url(../font/Kalameh-Light.ttf);
+}
 .item::after {
   content: "";
   position: absolute;
