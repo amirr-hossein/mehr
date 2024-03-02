@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="./assets/css/tailwind.css" />
   </head>
   <body class="mt-0 p-0 box-border" dir="ltr">
-    <div class="hero h-[413px] md:h-full md:hidden relative">
-      <div class="ml-[32px] pt-[24px]">
+    <div class="hero h-[413px] md:h-full md:hidden relative isblur">
+      <div class="ml-[32px] pt-[24px] isblur">
         <span class="humbarger">
           <svg
             width="24"
@@ -32,64 +32,7 @@
           </svg>
         </span>
       </div>
-      <div class="flex justify-end">
-        <div
-          class="mt-[27px] menu hidden md:flex absolute bg-white flex-col w-[251px] h-[100vh] z-[1] -top-[27px] items-end"
-        >
-          <div class="flex flex-row-reverse mr-[32px] mt-[40px] mb-[62px]">
-            <span class="close ml-[38px] font-normal font-Regular text-[20px]">
-              <svg
-                width="40"
-                height="40"
-                viewBox="0 0 40 40"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M20.0002 37.9167C10.1168 37.9167 2.0835 29.8834 2.0835 20C2.0835 10.1167 10.1168 2.08337 20.0002 2.08337C29.8835 2.08337 37.9168 10.1167 37.9168 20C37.9168 29.8834 29.8835 37.9167 20.0002 37.9167ZM20.0002 4.58337C11.5002 4.58337 4.5835 11.5 4.5835 20C4.5835 28.5 11.5002 35.4167 20.0002 35.4167C28.5002 35.4167 35.4168 28.5 35.4168 20C35.4168 11.5 28.5002 4.58337 20.0002 4.58337Z"
-                  fill="#0C0C0C"
-                />
-                <path
-                  d="M15.2834 25.9666C14.9668 25.9666 14.6501 25.85 14.4001 25.6C13.9168 25.1166 13.9168 24.3166 14.4001 23.8333L23.8334 14.4C24.3168 13.9166 25.1168 13.9166 25.6001 14.4C26.0834 14.8833 26.0834 15.6833 25.6001 16.1666L16.1668 25.6C15.9334 25.85 15.6001 25.9666 15.2834 25.9666Z"
-                  fill="#0C0C0C"
-                />
-                <path
-                  d="M24.7168 25.9666C24.4001 25.9666 24.0834 25.85 23.8334 25.6L14.4001 16.1666C13.9168 15.6833 13.9168 14.8833 14.4001 14.4C14.8834 13.9166 15.6834 13.9166 16.1668 14.4L25.6001 23.8333C26.0834 24.3166 26.0834 25.1166 25.6001 25.6C25.3501 25.85 25.0334 25.9666 24.7168 25.9666Z"
-                  fill="#0C0C0C"
-                />
-              </svg>
-            </span>
-            <h1 class="font-normal font-Regular text-[20px]">منو</h1>
-          </div>
-          <ul class="flex flex-col mr-[32px] mb-[192px]">
-            <li
-              class="font-normal text-[20px] font-Regular mb-[40px] hover:text-[#FF7700] relative text-end"
-            >
-              <a href="#">صفحه اصلی</a>
-            </li>
-            <li
-              class="font-light text-[20px] font-Regular mb-[40px] hover:text-[#FF7700] pb-[6px] relative text-end"
-            >
-              <a href="#">تماس با ما</a>
-            </li>
-            <li
-              class="font-light text-[20px] font-Regular mb-[40px] hover:text-[#FF7700] pb-[6px] relative text-end"
-            >
-              <a href="#">درباره ما</a>
-            </li>
-            <li
-              class="font-light text-[20px] font-Regular mb-[40px] hover:text-[#FF7700] pb-[6px] relative text-end"
-            >
-              <a href="#">قوانین و مقررات</a>
-            </li>
-          </ul>
-          <div class="flex items-center lg:ml-[52px] md:ml-[32px] w-[59vw] justify-center mb-[40px]">
-            <img src="./assets/img/icon.png" alt="" />
-            <p class="font-Inter font-bold text-textIcon ml-[8px]">mr.shop</p>
-          </div>
-        </div>
-      </div>
-      <div class="mt-[113px]">
+      <div class="mt-[113px] isblur">
         <h1 class="text-[32px] font-kBold text-white text-center">
           جشنواره بزرگ <span class="txtGra">مهر ماه</span>
         </h1>
@@ -100,7 +43,66 @@
         </h2>
       </div>
     </div>
-    <div class="flex">
+    <div class="flex justify-end">
+      <div
+        class="mt-[27px] menu hidden md:flex absolute bg-white flex-col w-[251px] h-[100vh] z-[1] -top-[27px] items-end"
+      >
+        <div class="flex flex-row-reverse mr-[32px] mt-[40px] mb-[62px]">
+          <span class="close ml-[38px] font-normal font-Regular text-[20px]">
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20.0002 37.9167C10.1168 37.9167 2.0835 29.8834 2.0835 20C2.0835 10.1167 10.1168 2.08337 20.0002 2.08337C29.8835 2.08337 37.9168 10.1167 37.9168 20C37.9168 29.8834 29.8835 37.9167 20.0002 37.9167ZM20.0002 4.58337C11.5002 4.58337 4.5835 11.5 4.5835 20C4.5835 28.5 11.5002 35.4167 20.0002 35.4167C28.5002 35.4167 35.4168 28.5 35.4168 20C35.4168 11.5 28.5002 4.58337 20.0002 4.58337Z"
+                fill="#0C0C0C"
+              />
+              <path
+                d="M15.2834 25.9666C14.9668 25.9666 14.6501 25.85 14.4001 25.6C13.9168 25.1166 13.9168 24.3166 14.4001 23.8333L23.8334 14.4C24.3168 13.9166 25.1168 13.9166 25.6001 14.4C26.0834 14.8833 26.0834 15.6833 25.6001 16.1666L16.1668 25.6C15.9334 25.85 15.6001 25.9666 15.2834 25.9666Z"
+                fill="#0C0C0C"
+              />
+              <path
+                d="M24.7168 25.9666C24.4001 25.9666 24.0834 25.85 23.8334 25.6L14.4001 16.1666C13.9168 15.6833 13.9168 14.8833 14.4001 14.4C14.8834 13.9166 15.6834 13.9166 16.1668 14.4L25.6001 23.8333C26.0834 24.3166 26.0834 25.1166 25.6001 25.6C25.3501 25.85 25.0334 25.9666 24.7168 25.9666Z"
+                fill="#0C0C0C"
+              />
+            </svg>
+          </span>
+          <h1 class="font-normal font-Regular text-[20px]">منو</h1>
+        </div>
+        <ul class="flex flex-col mr-[32px] mb-[192px]">
+          <li
+            class="font-normal text-[20px] font-Regular mb-[40px] hover:text-[#FF7700] relative text-end"
+          >
+            <a href="#">صفحه اصلی</a>
+          </li>
+          <li
+            class="font-light text-[20px] font-Regular mb-[40px] hover:text-[#FF7700] pb-[6px] relative text-end"
+          >
+            <a href="#">تماس با ما</a>
+          </li>
+          <li
+            class="font-light text-[20px] font-Regular mb-[40px] hover:text-[#FF7700] pb-[6px] relative text-end"
+          >
+            <a href="#">درباره ما</a>
+          </li>
+          <li
+            class="font-light text-[20px] font-Regular mb-[40px] hover:text-[#FF7700] pb-[6px] relative text-end"
+          >
+            <a href="#">قوانین و مقررات</a>
+          </li>
+        </ul>
+        <div
+          class="flex items-center lg:ml-[52px] md:ml-[32px] w-[59vw] justify-center mb-[40px]"
+        >
+          <img src="./assets/img/icon.png" alt="" />
+          <p class="font-Inter font-bold text-textIcon ml-[8px]">mr.shop</p>
+        </div>
+      </div>
+    </div>
+    <div class="flex isblur relative -z-[1]">
       <div>
         <img
           class="w-[100vw] h-[100vh] md:block hidden"
