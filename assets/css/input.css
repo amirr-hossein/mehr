@@ -10,6 +10,10 @@
   src: url(../font/Estedad-Light.ttf);
 }
 @font-face {
+  font-family: estedadBold;
+  src: url(../font/Estedad-Bold.ttf);
+}
+@font-face {
   font-family: kalamehbold;
   src: url(../font/Kalameh-Bold.ttf);
 }
@@ -57,4 +61,12 @@
     background-repeat: no-repeat;
     background-size: 100vw 100%;
   }
+  .explainSectionHero{
+    direction: rtl;
+  }
+}
+.txtGra{
+  background: -webkit-linear-gradient(180deg, #FF8000 0%, #FF6C00 46.35%, #FF5500 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

@@ -8,7 +8,8 @@ module.exports = {
         Light:["estedadLight"],
         kBold:["kalamehbold"],
         Regular:["estedadRegular"],
-        lightKalameh:["kalamehlight"]
+        lightKalameh:["kalamehlight"],
+        estedadBold:["estedadBold"],
       },
       fontSize:{
         textIcon:"12px",

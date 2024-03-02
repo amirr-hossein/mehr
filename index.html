@@ -7,7 +7,99 @@
     <link rel="stylesheet" href="./assets/css/tailwind.css" />
   </head>
   <body class="mt-0 p-0 box-border" dir="ltr">
-    <div class="flex hero">
+    <div class="hero h-[413px] md:h-full md:hidden relative">
+      <div class="ml-[32px] pt-[24px]">
+        <span class="humbarger">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M21 7.75H3C2.59 7.75 2.25 7.41 2.25 7C2.25 6.59 2.59 6.25 3 6.25H21C21.41 6.25 21.75 6.59 21.75 7C21.75 7.41 21.41 7.75 21 7.75Z"
+              fill="white"
+            />
+            <path
+              d="M21 12.75H3C2.59 12.75 2.25 12.41 2.25 12C2.25 11.59 2.59 11.25 3 11.25H21C21.41 11.25 21.75 11.59 21.75 12C21.75 12.41 21.41 12.75 21 12.75Z"
+              fill="white"
+            />
+            <path
+              d="M21 17.75H3C2.59 17.75 2.25 17.41 2.25 17C2.25 16.59 2.59 16.25 3 16.25H21C21.41 16.25 21.75 16.59 21.75 17C21.75 17.41 21.41 17.75 21 17.75Z"
+              fill="white"
+            />
+          </svg>
+        </span>
+      </div>
+      <div class="flex justify-end">
+        <div
+          class="mt-[27px] items-center menu hidden md:flex absolute bg-white flex-col w-[251px] h-[100vh] z-[1] -top-[27px]"
+        >
+          <div>
+            <span class="close">
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20.0002 37.9167C10.1168 37.9167 2.0835 29.8834 2.0835 20C2.0835 10.1167 10.1168 2.08337 20.0002 2.08337C29.8835 2.08337 37.9168 10.1167 37.9168 20C37.9168 29.8834 29.8835 37.9167 20.0002 37.9167ZM20.0002 4.58337C11.5002 4.58337 4.5835 11.5 4.5835 20C4.5835 28.5 11.5002 35.4167 20.0002 35.4167C28.5002 35.4167 35.4168 28.5 35.4168 20C35.4168 11.5 28.5002 4.58337 20.0002 4.58337Z"
+                  fill="#0C0C0C"
+                />
+                <path
+                  d="M15.2834 25.9666C14.9668 25.9666 14.6501 25.85 14.4001 25.6C13.9168 25.1166 13.9168 24.3166 14.4001 23.8333L23.8334 14.4C24.3168 13.9166 25.1168 13.9166 25.6001 14.4C26.0834 14.8833 26.0834 15.6833 25.6001 16.1666L16.1668 25.6C15.9334 25.85 15.6001 25.9666 15.2834 25.9666Z"
+                  fill="#0C0C0C"
+                />
+                <path
+                  d="M24.7168 25.9666C24.4001 25.9666 24.0834 25.85 23.8334 25.6L14.4001 16.1666C13.9168 15.6833 13.9168 14.8833 14.4001 14.4C14.8834 13.9166 15.6834 13.9166 16.1668 14.4L25.6001 23.8333C26.0834 24.3166 26.0834 25.1166 25.6001 25.6C25.3501 25.85 25.0334 25.9666 24.7168 25.9666Z"
+                  fill="#0C0C0C"
+                />
+              </svg>
+            </span>
+          </div>
+          <ul class="flex flex-col">
+            <li
+              class="font-light lg:text-itemMenu md:text-[16px] font-Light xl:ml-[48px] lg:ml-[30px] md:ml-[25px] item hover:text-[#FF7700] pb-[6px] relative"
+            >
+              <a href="#">قوانین و مقررات</a>
+            </li>
+            <li
+              class="font-light lg:text-itemMenu md:text-[16px] font-Light xl:ml-[48px] lg:ml-[30px] md:ml-[25px] item hover:text-[#FF7700] pb-[6px] relative"
+            >
+              <a href="#">درباره ما</a>
+            </li>
+            <li
+              class="font-light lg:text-itemMenu md:text-[16px] font-Light xl:ml-[48px] lg:ml-[30px] md:ml-[25px] item hover:text-[#FF7700] pb-[6px] relative"
+            >
+              <a href="#">تماس با ما</a>
+            </li>
+            <li
+              class="font-light lg:text-itemMenu md:text-[16px] font-Light xl:ml-[48px] lg:ml-[30px] md:ml-[25px] item pb-[6px] hover:text-[#FF7700] relative"
+            >
+              <a href="#">صفحه اصلی</a>
+            </li>
+          </ul>
+          <div class="flex flex-col items-center lg:ml-[52px] md:ml-[32px]">
+            <img src="./assets/img/icon.png" alt="" />
+            <p class="font-Inter font-bold text-textIcon">mr.shop</p>
+          </div>
+        </div>
+      </div>
+      <div class="mt-[113px]">
+        <h1 class="text-[32px] font-kBold text-white text-center">
+          جشنواره بزرگ <span class="txtGra">مهر ماه</span>
+        </h1>
+        <h2
+          class="text-[16px] text-white font-estedadBold text-center mt-[8px]"
+        >
+          !تا فرصت هست ازش استفاده کن
+        </h2>
+      </div>
+    </div>
+    <div class="flex">
       <div>
         <img
           class="w-[100vw] h-[100vh] md:block hidden"
@@ -16,7 +108,7 @@
         />
       </div>
       <div class="container mx-auto">
-        <div class="mt-[27px] flex items-center">
+        <div class="mt-[27px] items-center hidden md:flex">
           <ul class="flex">
             <li
               class="font-light lg:text-itemMenu md:text-[16px] font-Light xl:ml-[48px] lg:ml-[30px] md:ml-[25px] item hover:text-[#FF7700] pb-[6px] relative"
@@ -44,16 +136,18 @@
             <p class="font-Inter font-bold text-textIcon">mr.shop</p>
           </div>
         </div>
-        <div class="mt-[109px]">
-          <div class="relative xl:ml-[254px] lg:ml-[185px] md:ml-[145px]">
+        <div class="md:mt-[109px] mt-[8px] mr-[32px] md:mr-0 md:ml-0 ml-[32px]">
+          <div
+            class="relative xl:ml-[254px] lg:ml-[185px] md:ml-[145px] flex justify-end md:block"
+          >
             <p
-              class="lg:text-titleHeroSection md:text-[40px] font-bold font-kBold text-[#FFA455]"
+              class="lg:text-titleHeroSection md:text-[40px] text-[20px] font-bold font-kBold text-[#FFA455]"
             >
               جشنواره بزرگ مهر ماه
             </p>
             <span class="absolute top-[54%]"
               ><svg
-              class="lg:w-full md:w-[330px]"
+                class="lg:w-full md:w-[330px] w-[170px]"
                 width="368"
                 height="16"
                 viewBox="0 0 368 16"
@@ -64,15 +158,19 @@
               </svg>
             </span>
           </div>
-          <div class="xl:ml-[40px] lg:ml-[78px] md:ml-[65px] mt-[32px] hidden md:block">
-            <div class="h-[105px] xl:w-[584px] lg:w-[480px] md:w-[415px]">
-              <p
-              class="font-normal xl:text-[20px] lg:text-[18px] md:text-[16px] font-Regular text-end"
+          <div
+            class="xl:ml-[40px] lg:ml-[78px] md:ml-[65px] mt-[16px] md:block flex justify-end"
+          >
+            <div
+              class="md:h-[105px] xl:w-[584px] lg:w-[480px] md:w-[415px] w-[100vw] h-[175px]"
             >
-              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
-              استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
-              .در ستون و سطرآنچنان که لازم است
-            </p>
+              <p
+                class="font-normal xl:text-[20px] lg:text-[18px] md:text-[16px] text-[20px] font-Regular md:!text-end explainSectionHero text-justify"
+              >
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+                .در ستون و سطرآنچنان که لازم است
+              </p>
             </div>
           </div>
           <div class="mt-[104px] lg:ml-[314px] md:ml-[236px] hidden md:block">
@@ -92,5 +190,6 @@
         </div>
       </div>
     </div>
+    <script src="./assets/js/script.js" defer></script>
   </body>
 </html>
