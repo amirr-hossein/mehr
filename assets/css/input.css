@@ -15,15 +15,22 @@
 }
 @font-face {
   font-family: kalamehbold;
+  font-weight: 700;
   src: url(../font/Kalameh-Bold.ttf);
 }
 @font-face {
   font-family: estedadRegular;
+  font-weight: 400;
   src: url(../font/Estedad-Regular.ttf);
 }
 @font-face {
   font-family: kalamehlight;
   src: url(../font/Kalameh-Light.ttf);
+}
+@font-face {
+  font-family: estedadMedium;
+  font-weight: 500;
+  src: url(../font/Estedad-Medium.ttf);
 }
 .item::after {
   content: "";
@@ -55,21 +62,30 @@
   animation: 2s linear 0s infinite scroll-Ball;
 }
 
-@media screen and (max-width: 768px){
-  .hero{
+@media screen and (max-width: 768px) {
+  .hero {
     background-image: url(../img/imageHeroMobile.png);
     background-repeat: no-repeat;
     background-size: 100vw 100%;
   }
-  .explainSectionHero{
+  .explainSectionHero {
     direction: rtl;
   }
 }
-.txtGra{
-  background: -webkit-linear-gradient(180deg, #FF8000 0%, #FF6C00 46.35%, #FF5500 100%);
+.txtGra {
+  background: -webkit-linear-gradient(
+    180deg,
+    #ff8000 0%,
+    #ff6c00 46.35%,
+    #ff5500 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-/* .blur{
-  backdrop-filter: blur(10px);
-} */
+.bg-card {
+  background: linear-gradient(180deg, #ff8000 0%, #ff6c00 46.35%, #ff5500 100%);
+}
+.deco {
+  text-decoration: line-through;
+  text-decoration-color: #757575;
+}

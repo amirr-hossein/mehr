@@ -708,6 +708,10 @@ video {
   margin-right: auto;
 }
 
+.mb-\[16px\] {
+  margin-bottom: 16px;
+}
+
 .mb-\[192px\] {
   margin-bottom: 192px;
 }
@@ -720,6 +724,18 @@ video {
   margin-bottom: 62px;
 }
 
+.mb-\[77px\] {
+  margin-bottom: 77px;
+}
+
+.mb-\[88px\] {
+  margin-bottom: 88px;
+}
+
+.ml-\[24px\] {
+  margin-left: 24px;
+}
+
 .ml-\[32px\] {
   margin-left: 32px;
 }
@@ -730,6 +746,14 @@ video {
 
 .ml-\[8px\] {
   margin-left: 8px;
+}
+
+.ml-\[\] {
+  margin-left: ;
+}
+
+.mr-\[24px\] {
+  margin-right: 24px;
 }
 
 .mr-\[32px\] {
@@ -756,6 +780,10 @@ video {
   margin-top: 16px;
 }
 
+.mt-\[24px\] {
+  margin-top: 24px;
+}
+
 .mt-\[27px\] {
   margin-top: 27px;
 }
@@ -770,6 +798,14 @@ video {
 
 .mt-\[8px\] {
   margin-top: 8px;
+}
+
+.ml-\[88px\] {
+  margin-left: 88px;
+}
+
+.ml-\[54px\] {
+  margin-left: 54px;
 }
 
 .box-border {
@@ -879,8 +915,16 @@ video {
   height: 175px;
 }
 
+.h-\[280px\] {
+  height: 280px;
+}
+
 .h-\[413px\] {
   height: 413px;
+}
+
+.h-\[442px\] {
+  height: 442px;
 }
 
 .h-\[60px\] {
@@ -899,12 +943,28 @@ video {
   width: 170px;
 }
 
+.w-\[215px\] {
+  width: 215px;
+}
+
 .w-\[251px\] {
   width: 251px;
 }
 
+.w-\[288px\] {
+  width: 288px;
+}
+
+.w-\[330px\] {
+  width: 330px;
+}
+
 .w-\[35px\] {
   width: 35px;
+}
+
+.w-\[450px\] {
+  width: 450px;
 }
 
 .w-\[59vw\] {
@@ -973,6 +1033,10 @@ video {
 
 .transform-none {
   transform: none;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .touch-auto {
@@ -1731,6 +1795,10 @@ video {
   border-radius: 24px;
 }
 
+.rounded-\[8px\] {
+  border-radius: 8px;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -1866,6 +1934,16 @@ video {
 .border-\[\#757575\] {
   --tw-border-opacity: 1;
   border-color: rgb(117 117 117 / var(--tw-border-opacity));
+}
+
+.border-\[\#EDEDED\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(237 237 237 / var(--tw-border-opacity));
+}
+
+.border-b-\[\#EDEDED\] {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(237 237 237 / var(--tw-border-opacity));
 }
 
 .bg-\[\#757575\] {
@@ -2077,6 +2155,10 @@ video {
   font-family: estedadBold;
 }
 
+.font-estedadMediun {
+  font-family: estedadMedium;
+}
+
 .font-kBold {
   font-family: kalamehbold;
 }
@@ -2097,12 +2179,24 @@ video {
   font-size: 32px;
 }
 
+.text-explainShowCard {
+  font-size: 20px;
+}
+
 .text-scroll {
   font-size: 16px;
 }
 
+.text-showMoreProduct {
+  font-size: 14px;
+}
+
 .text-textIcon {
   font-size: 12px;
+}
+
+.text-titleShowCard {
+  font-size: 32px;
 }
 
 .font-bold {
@@ -2399,6 +2493,12 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-card {
+  --tw-shadow: 0px 0px 8px 0px rgba(13, 10, 44, 0.04);
+  --tw-shadow-colored: 0px 0px 8px 0px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .outline-none {
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -2547,11 +2647,15 @@ video {
 @font-face {
   font-family: kalamehbold;
 
+  font-weight: 700;
+
   src: url(../font/Kalameh-Bold.ttf);
 }
 
 @font-face {
   font-family: estedadRegular;
+
+  font-weight: 400;
 
   src: url(../font/Estedad-Regular.ttf);
 }
@@ -2560,6 +2664,14 @@ video {
   font-family: kalamehlight;
 
   src: url(../font/Kalameh-Light.ttf);
+}
+
+@font-face {
+  font-family: estedadMedium;
+
+  font-weight: 500;
+
+  src: url(../font/Estedad-Medium.ttf);
 }
 
 .item::after {
@@ -2597,27 +2709,37 @@ video {
   animation: 2s linear 0s infinite scroll-Ball;
 }
 
-@media screen and (max-width: 768px){
-  .hero{
+@media screen and (max-width: 768px) {
+  .hero {
     background-image: url(../img/imageHeroMobile.png);
     background-repeat: no-repeat;
     background-size: 100vw 100%;
   }
 
-  .explainSectionHero{
+  .explainSectionHero {
     direction: rtl;
   }
 }
 
-.txtGra{
-  background: -webkit-linear-gradient(180deg, #FF8000 0%, #FF6C00 46.35%, #FF5500 100%);
+.txtGra {
+  background: -webkit-linear-gradient(
+    180deg,
+    #ff8000 0%,
+    #ff6c00 46.35%,
+    #ff5500 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-/* .blur{
-  backdrop-filter: blur(10px);
-} */
+.bg-card {
+  background: linear-gradient(180deg, #ff8000 0%, #ff6c00 46.35%, #ff5500 100%);
+}
+
+.deco {
+  text-decoration: line-through;
+  text-decoration-color: #757575;
+}
 
 @media (min-width: 640px) {
   .sm\:container {
