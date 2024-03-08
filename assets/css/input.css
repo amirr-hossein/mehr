@@ -89,3 +89,8 @@
   text-decoration: line-through;
   text-decoration-color: #757575;
 }
+.gradDiscount {
+  background: linear-gradient(79.77deg, #e31c40 0%, #f64c4c 100%);
+  border-bottom-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
