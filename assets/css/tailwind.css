@@ -663,6 +663,18 @@ video {
   top: 54%;
 }
 
+.left-\[\] {
+  left: ;
+}
+
+.left-\[21\%\] {
+  left: 21%;
+}
+
+.-left-\[21\%\] {
+  left: -21%;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -977,6 +989,10 @@ video {
 
 .w-\[9px\] {
   width: 9px;
+}
+
+.flex-\[1\] {
+  flex: 1;
 }
 
 .flex-shrink {
@@ -2899,6 +2915,34 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:absolute {
+    position: absolute;
+  }
+
+  .lg\:-left-\[21\%\] {
+    left: -21%;
+  }
+
+  .lg\:right-\[68\%\] {
+    right: 68%;
+  }
+
+  .lg\:right-\[21\%\] {
+    right: 21%;
+  }
+
+  .lg\:right-\[\%\] {
+    right: %;
+  }
+
+  .lg\:right-\[35\%\] {
+    right: 35%;
+  }
+
+  .lg\:-right-\[35\%\] {
+    right: -35%;
+  }
+
   .lg\:ml-\[185px\] {
     margin-left: 185px;
   }
@@ -2923,12 +2967,32 @@ video {
     margin-left: 78px;
   }
 
+  .lg\:h-\[429px\] {
+    height: 429px;
+  }
+
   .lg\:w-\[480px\] {
     width: 480px;
   }
 
   .lg\:w-full {
     width: 100%;
+  }
+
+  .lg\:w-\[258px\] {
+    width: 258px;
+  }
+
+  .lg\:w-\[\] {
+    width: ;
+  }
+
+  .lg\:w-\[380px\] {
+    width: 380px;
+  }
+
+  .lg\:flex-\[1\] {
+    flex: 1;
   }
 
   .lg\:text-\[18px\] {
@@ -2953,6 +3017,18 @@ video {
 }
 
 @media (min-width: 1280px) {
+  .xl\:relative {
+    position: relative;
+  }
+
+  .xl\:left-0 {
+    left: 0px;
+  }
+
+  .xl\:right-0 {
+    right: 0px;
+  }
+
   .xl\:ml-\[254px\] {
     margin-left: 254px;
   }
@@ -2965,11 +3041,89 @@ video {
     margin-left: 48px;
   }
 
+  .xl\:mt-\[16px\] {
+    margin-top: 16px;
+  }
+
+  .xl\:flex {
+    display: flex;
+  }
+
+  .xl\:h-\[\] {
+    height: ;
+  }
+
+  .xl\:h-\[248px\] {
+    height: 248px;
+  }
+
+  .xl\:h-\[429px\] {
+    height: 429px;
+  }
+
   .xl\:w-\[584px\] {
     width: 584px;
   }
 
+  .xl\:w-\[\] {
+    width: ;
+  }
+
+  .xl\:w-\[410px\] {
+    width: 410px;
+  }
+
+  .xl\:w-\[258px\] {
+    width: 258px;
+  }
+
+  .xl\:w-\[219px\] {
+    width: 219px;
+  }
+
+  .xl\:w-\[210px\] {
+    width: 210px;
+  }
+
+  .xl\:flex-\[0\] {
+    flex: 0;
+  }
+
+  .xl\:flex-none {
+    flex: none;
+  }
+
+  .xl\:justify-between {
+    justify-content: space-between;
+  }
+
   .xl\:text-\[20px\] {
     font-size: 20px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .\32xl\:h-\[280px\] {
+    height: 280px;
+  }
+
+  .\32xl\:h-\[442px\] {
+    height: 442px;
+  }
+
+  .\32xl\:w-\[450px\] {
+    width: 450px;
+  }
+
+  .\32xl\:w-\[330px\] {
+    width: 330px;
+  }
+
+  .\32xl\:w-\[288px\] {
+    width: 288px;
   }
 }
