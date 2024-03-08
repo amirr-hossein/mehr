@@ -20,7 +20,8 @@ module.exports = {
         titleShowCard:"32px",
         explainShowCard:"20px",
         showMoreProduct:"14px",
-        
+        explainMobile:"10px",
+        cardDiscountMobile:"8px",
       },
       boxShadow:{
         card:"0px 0px 8px 0px rgba(13, 10, 44, 0.04)"
